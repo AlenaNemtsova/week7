@@ -20,6 +20,7 @@ nav {
     display: grid;
     grid-template-columns: 30% 40% 30%;
     align-items: center;
+    justify-items: center;
 }
 
 .logo {
@@ -28,7 +29,6 @@ nav {
     font-weight: 600;
     font-size: 21px;
     color: #3C227C;
-    padding-left: 112px;
 }
 
 .nav-menu {
@@ -45,10 +45,6 @@ nav {
 
 .sign .menu {
     color: #3C64B1;
-}
-
-.sign {
-    justify-self: center;
 }
 
 .sign button {
@@ -71,29 +67,33 @@ nav {
     line-height: 18px;
 }
 
-
 .main {
     height: 580px;
-    width: 100%;
+    width: 100vw;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 50% 50%;
+    align-items: center;
 }
 
 .maintext {
-    width: 500px;
-    padding: 50px 150px 70px 50px;
+    width: 80%;
+    padding-left: 10px;
+    text-align: justify;
 }
 
 .main img {
-    padding-left: 90px;
+    width: 100%;
+    max-width: 100%;
 }
 
 h2 {
     font-family: Poppins;
     font-style: normal;
-    font-size: 52px;
-    line-height: 56px;
+    font-size: 46px;
+    line-height: 48px;
     color: #373F41;
+    margin-top: 0;
+    margin-bottom: 30px;
 }
 
 .maintext div {
@@ -102,7 +102,7 @@ h2 {
     font-size: 16px;
     line-height: 22px;
     color: #737B7D;
-    margin-bottom: 55px;
+    margin-bottom: 30px;
 }
 
 .contact {
@@ -122,13 +122,11 @@ h2 {
 }
 
 
-
 .section1 {
     width: 100vw;
     height: 750px;
     display: grid;
-    grid-template-columns: 60% 40%;
-    grid-template-rows: 1fr 200px 1fr;
+    grid-template-columns: 50% 50%;
     align-items: center;
 }
 
@@ -137,10 +135,14 @@ h2 {
 .sec1-text3 {
     box-sizing: border-box;
     border-radius: 15px;
-    width: 588px;
     height: 135px;
     padding: 27px 27px 24px 30px;
-    margin-left: 122px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.sec1-text {
+    padding-left: 100px;
 }
 
 .sec1-text2,
@@ -151,36 +153,28 @@ h2 {
 .sec1-text1 {
     background-color: #4F55DD;
     color: #FFFFFF;
-    grid-row: 1/2;
-    grid-column: 1/2;
-    align-self: end;
 }
 
 .sec1-text2 {
     background-color: #FFFFFF;
-    grid-row: 2/3;
-    grid-column: 1/2;
 }
 
 .sec1-text3 {
     background-color: #FFFFFF;
-    grid-row: 3/4;
-    grid-column: 1/2;
-    align-self: start;
 }
 
 .sec1-img {
-    grid-row: 1/4;
-    grid-column: 2/3;
+    width: 100%;
+    max-width: 100%;
 }
-
 
 .section2 {
     height: 305px;
     background-color: rgba(46, 213, 115, 0.5);
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 50% 50%;
     align-items: center;
+    padding-left: 100px;
 }
 
 .section2 div {
@@ -188,22 +182,23 @@ h2 {
     font-style: normal;
     font-weight: 600;
     font-size: 44px;
-    line-height: 56px;
+    line-height: 50px;
     color: #4F4F4F;
-    width: 471px;
+    width: 80%;
     height: 160px;
-    padding-left: 122px;
+
 }
 
 .section3 {
     height: 530px;
     display: grid;
-    grid-template-columns: repeat(4, 255px);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 126px);
     align-content: center;
-    row-gap: 72px;
-    column-gap: 66px;
-    padding-left: 122px;
+    row-gap: 70px;
+    column-gap: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 .section3 p {
@@ -242,12 +237,12 @@ h2 {
 
 .section4 {
     height: 582px;
-    padding-left: 122px;
+    padding-left: 100px;
 }
 
 .sec4-grid {
     display: grid;
-    grid-template-columns: 472px 35%;
+    grid-template-columns: 50% 50%;
     column-gap: 170px;
     align-items: center;
 }
@@ -285,7 +280,7 @@ h2 {
 
 .section5 {
     height: 450px;
-    padding-left: 122px;
+    padding-left: 100px;
     font-family: Poppins;
     font-style: normal;
     background-color: rgba(255, 71, 87, 0.5);
@@ -332,7 +327,7 @@ input {
 .section6 {
     font-family: Poppins;
     font-style: normal;
-    padding: 65px 122px 125px 110px;
+    padding: 65px 100px 125px 110px;
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -434,7 +429,7 @@ footer {
     height: 80%;
     width: 85%;
     margin-top: 43px;
-    margin-left: 122px;
+    margin-left: 100px;
     display: grid;
     grid-template-columns: 45% 1fr 1fr 1fr;
     grid-template-rows: 15% 40% 15% 20% 10%;
